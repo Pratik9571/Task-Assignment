@@ -29,7 +29,7 @@ const Home = () => {
             fontWeight: "Bold",
           }}
         >
-          Business Logo
+          Logo
         </Typography>
         <Box
           sx={{
