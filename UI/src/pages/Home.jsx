@@ -6,7 +6,6 @@ const Home = () => {
   return (
     <Box>
       <Box
-        name="suru ko haru"
         sx={{
           color: "black",
           position: "relative",
@@ -29,17 +28,19 @@ const Home = () => {
             fontWeight: "Bold",
           }}
         >
-          Logo
+          Building Logo
         </Typography>
         <Box
           sx={{
             position: "absolute",
-            top: "2rem", // Adjust the distance from the top as needed
-            right: "1rem",
+            top: "1rem",
+            right: "1rem", // Adjusted position to the right
             zIndex: 1,
             display: "flex",
             gap: "2rem",
             alignContent: "right",
+            height: "2vh",
+            width: "20vw",
           }}
         >
           <Typography
@@ -117,13 +118,60 @@ const Home = () => {
             <Box sx={{ marginBottom: "10vh" }} />
             {/* Add space below the boxes */}
             {/* Add space below the boxes */}
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            margin: "4rem",
+            position: "absolute",
+            top: "5rem", // Adjusted position from the top
+            left: "5rem", // Adjusted position from the left
+          }}
+        >
+          <Box
+            sx={{
+              marginTop: "15rem",
+              display: "flex",
+              flexDirection: "column",
+              width: "70%",
+              padding: " 2rem 2rem",
+            }}
+          >
+            <Typography variant="h4" color={"white"}>
+              Building with Confidence
+            </Typography>
             <Box
               sx={{
-                background: "Pink",
-                minHeight: "83.2vh",
+                display: "flex",
+                flexDirection: "column",
               }}
             >
-              <Typography variant="h4">Building with Confidence</Typography>
+              <Typography
+                variant="h1"
+                sx={{
+                  fontFamily: "Arial",
+                  fontSize: "10rem",
+                  color: "white",
+                  display: "flex",
+                  flexDirection: "row",
+                }}
+              >
+                <span style={{ color: "blue" }}>Building </span>And
+                <br />
+                <span style={{ color: "blue" }}>Maintaining</span>
+              </Typography>
+              <Typography
+                variant="h1"
+                sx={{
+                  fontFamily: "Arial",
+                  fontSize: "10rem",
+                  color: "white",
+                }}
+              >
+                Your Dreams
+              </Typography>
             </Box>
           </Box>
         </Box>
